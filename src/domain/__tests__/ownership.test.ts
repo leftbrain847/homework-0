@@ -117,6 +117,10 @@ describe('classification and headline', () => {
     expect(headline(nonPe({ source_url: null })).category).toBe('unverified');
   });
 
+  it('unverified with no brand record never reads as independent', () => {
+    expect(ownershipHeadline('unverified', null, getFirm)).toBe('Ownership unverified');
+  });
+
   it('no brand is independent', () => {
     expect(headline(null)).toEqual({ category: 'independent', text: 'Independent restaurant' });
   });

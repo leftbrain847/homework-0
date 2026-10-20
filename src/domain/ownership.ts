@@ -81,6 +81,7 @@ export function ownershipHeadline(
   getFirm: FirmLookup,
   franchised = false,
 ): string {
+  if (category === 'unverified') return 'Ownership unverified';
   if (!brand) return 'Independent restaurant';
   const owners = firmNames(peFirmIds(brand, getFirm), getFirm);
   const since = brand.acquired_year ? ` since ${brand.acquired_year}` : '';
@@ -103,8 +104,6 @@ export function ownershipHeadline(
       const parent = brand.parent_company ? getFirm(brand.parent_company) : undefined;
       return parent ? `Part of ${brand.name}, owned by ${parent.name}` : `Part of ${brand.name}`;
     }
-    case 'unverified':
-      return 'Ownership unverified';
   }
 }
 
