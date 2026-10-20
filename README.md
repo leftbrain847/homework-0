@@ -52,6 +52,13 @@ on real devices, so run the native rows of [`docs/UAT.md`](docs/UAT.md) in Expo 
 The shell is enabled only by `EXPO_PUBLIC_PREVIEW_SHELL=1`; a shipped web build would leave it
 off and get the same responsive app (side panel at ≥ 768 px wide).
 
+### Live ownership lookup (test feature)
+
+In the published web preview, searching a name that isn't in the sample data offers
+**Look up live**: Claude researches the real owner from public sources and the answer appears in
+the app, with sources and the same neutral wording rules. It is unreviewed and for testing only.
+See [`docs/LIVE_LOOKUP.md`](docs/LIVE_LOOKUP.md).
+
 ### Google Maps API key (Android production builds only)
 
 Expo Go and iOS (Apple Maps) need no key. For an Android production (EAS) build:

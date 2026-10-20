@@ -4,6 +4,7 @@ import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'reac
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useDirectory, useDirectoryContext } from '@/data/DirectoryProvider';
+import { useLookupService } from '@/data/live/useLookupService';
 import type { Directory } from '@/domain/directory';
 import type { LatLng, LocationView } from '@/domain/types';
 import { LocationDetails } from '@/features/details/LocationDetails';
@@ -101,6 +102,10 @@ function LoadedMapScreen({ directory }: { directory: Directory }) {
     [data],
   );
 
+  const lookupService = useLookupService();
+  const openLiveLookup = lookupService
+    ? () => router.push({ pathname: '/lookup', params: { q: data.query.trim() } })
+    : undefined;
   const openFirm = (id: string) => router.push({ pathname: '/firm/[id]', params: { id } });
   const openAbout = () => router.push('/about');
 
@@ -173,7 +178,13 @@ function LoadedMapScreen({ directory }: { directory: Directory }) {
               {details}
             </ScrollView>
           ) : data.query.trim() ? (
-            <SearchResults results={data.results} total={data.totalResults} onSelect={focus} />
+            <SearchResults
+              results={data.results}
+              total={data.totalResults}
+              onSelect={focus}
+              onLiveLookup={openLiveLookup}
+              query={data.query.trim()}
+            />
           ) : (
             <ScrollView contentContainerStyle={styles.sideContent}>
               <AppText muted>
@@ -219,7 +230,13 @@ function LoadedMapScreen({ directory }: { directory: Directory }) {
                   },
                 ]}
               >
-                <SearchResults results={data.results} total={data.totalResults} onSelect={focus} />
+                <SearchResults
+                  results={data.results}
+                  total={data.totalResults}
+                  onSelect={focus}
+                  onLiveLookup={openLiveLookup}
+                  query={data.query.trim()}
+                />
               </View>
             )}
           </View>

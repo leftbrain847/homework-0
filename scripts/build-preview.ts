@@ -5,7 +5,7 @@
  * UAT preview can be opened or hosted anywhere without a server.
  * Run via `npm run build:preview`.
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = join(__dirname, '..');
@@ -21,8 +21,18 @@ const safe = (code: string) =>
 const styles = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)">/g)].map(
   (m) => `<style>${safe(read(m[1]!))}</style>`,
 );
+// Images the bundle loads by URL (navigation icons) become data URIs, so the
+// file works wherever it is served from.
+const inlineImages = (code: string) =>
+  code.replace(/"(\/assets\/[^"]+\.png)"/g, (match, path: string) => {
+    const file = join(dist, path);
+    return existsSync(file)
+      ? JSON.stringify(`data:image/png;base64,${readFileSync(file).toString('base64')}`)
+      : match;
+  });
+
 const scripts = [...html.matchAll(/<script src="([^"]+)" defer><\/script>/g)].map(
-  (m) => `<script>${safe(read(m[1]!))}</script>`,
+  (m) => `<script>${safe(inlineImages(read(m[1]!)))}</script>`,
 );
 const reset = html.match(/<style id="expo-reset">[\s\S]*?<\/style>/)?.[0] ?? '';
 

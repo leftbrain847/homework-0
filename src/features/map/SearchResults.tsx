@@ -10,16 +10,38 @@ interface Props {
   results: LocationView[];
   total: number;
   onSelect: (view: LocationView) => void;
+  /** Shown as a final row when live lookup is available. */
+  onLiveLookup?: () => void;
+  query?: string;
 }
 
-export function SearchResults({ results, total, onSelect }: Props) {
+export function SearchResults({ results, total, onSelect, onLiveLookup, query }: Props) {
   const { colors } = useTheme();
+  const liveRow = onLiveLookup ? (
+    <Pressable
+      onPress={onLiveLookup}
+      accessibilityRole="button"
+      accessibilityLabel={`Look up ownership of ${query ?? 'this name'} live`}
+      accessibilityHint="Asks Claude to research it from public sources"
+      style={({ pressed }) => [styles.liveRow, pressed && { backgroundColor: colors.surfaceAlt }]}
+    >
+      <AppText variant="bodyStrong" style={{ color: colors.accent }}>
+        {`Look up “${query ?? ''}” live →`}
+      </AppText>
+      <AppText variant="caption" muted>
+        Researches real ownership from public sources (test feature)
+      </AppText>
+    </Pressable>
+  ) : null;
   if (results.length === 0) {
     return (
-      <View style={styles.empty}>
-        <AppText muted accessibilityLiveRegion="polite">
-          No restaurants match. Try another name, or switch the filter to All.
-        </AppText>
+      <View>
+        <View style={styles.empty}>
+          <AppText muted accessibilityLiveRegion="polite">
+            No restaurants match in the sample data. Try another name, or switch the filter to All.
+          </AppText>
+        </View>
+        {liveRow}
       </View>
     );
   }
@@ -33,6 +55,7 @@ export function SearchResults({ results, total, onSelect }: Props) {
           {total > results.length ? `Showing ${results.length} of ${total}` : `${total} found`}
         </AppText>
       }
+      ListFooterComponent={liveRow ?? undefined}
       ItemSeparatorComponent={() => (
         <View style={[styles.sep, { backgroundColor: colors.border }]} />
       )}
@@ -60,6 +83,7 @@ export function SearchResults({ results, total, onSelect }: Props) {
 
 const styles = StyleSheet.create({
   empty: { padding: space.lg },
+  liveRow: { paddingHorizontal: space.lg, paddingVertical: space.md, gap: 2, minHeight: 56 },
   count: { paddingHorizontal: space.lg, paddingTop: space.sm, paddingBottom: space.xs },
   row: {
     flexDirection: 'row',

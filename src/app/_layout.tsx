@@ -37,6 +37,7 @@ function AppStack() {
         <Stack.Screen name="index" options={{ headerShown: false, title: 'Ownership Map' }} />
         <Stack.Screen name="about" options={{ title: 'About and data' }} />
         <Stack.Screen name="firm/[id]" options={{ title: 'Firm' }} />
+        <Stack.Screen name="lookup" options={{ title: 'Live ownership lookup' }} />
       </Stack>
     </>
   );
