@@ -45,7 +45,11 @@ function Shell({ children }: { children: ReactNode }) {
 
   return (
     <View style={styles.page}>
-      <View style={styles.toolbar} accessibilityRole="toolbar" accessibilityLabel="Preview controls">
+      <View
+        style={styles.toolbar}
+        accessibilityRole="toolbar"
+        accessibilityLabel="Preview controls"
+      >
         <Text style={styles.brand} numberOfLines={1}>
           Preview
         </Text>
@@ -79,7 +83,9 @@ function Shell({ children }: { children: ReactNode }) {
         />
       </View>
       <View style={[styles.stage, fill && styles.stageFill]}>
-        <View style={{ width: (frameW + border * 2) * scale, height: (frameH + border * 2) * scale }}>
+        <View
+          style={{ width: (frameW + border * 2) * scale, height: (frameH + border * 2) * scale }}
+        >
           {/* Remount per device so the app starts fresh, as on a real device. */}
           <View
             key={device}
@@ -146,7 +152,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#151A20',
     overflow: 'scroll' as unknown as 'hidden',
   },
-  brand: { color: '#C9D2DC', fontWeight: '700', fontSize: 13, letterSpacing: 0.6, textTransform: 'uppercase' },
+  brand: {
+    color: '#C9D2DC',
+    fontWeight: '700',
+    fontSize: 13,
+    letterSpacing: 0.6,
+    textTransform: 'uppercase',
+  },
   segment: { flexDirection: 'row', backgroundColor: '#2A323C', borderRadius: 8, padding: 2 },
   option: { paddingHorizontal: 10, paddingVertical: 6, borderRadius: 6 },
   optionOn: { backgroundColor: '#E7ECF2' },
@@ -155,6 +167,11 @@ const styles = StyleSheet.create({
   stage: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: GUTTER },
   stageFill: { padding: 0, alignItems: 'stretch', justifyContent: 'flex-start' },
   frame: { overflow: 'hidden', backgroundColor: '#FFFFFF' },
-  phoneFrame: { borderRadius: 36, borderWidth: 10, borderColor: '#0B0E12', boxSizing: 'content-box' } as object,
+  phoneFrame: {
+    borderRadius: 36,
+    borderWidth: 10,
+    borderColor: '#0B0E12',
+    boxSizing: 'content-box',
+  } as object,
   desktopFrame: { borderRadius: 10, borderWidth: 1, borderColor: '#0B0E12' },
 });
