@@ -1,0 +1,38 @@
+[
+  {
+    "id": "quillmere_capital",
+    "name": "Quillmere Capital (sample)",
+    "type": "pe_firm",
+    "website": "https://example.com/quillmere-capital"
+  },
+  {
+    "id": "tamberlake_equity",
+    "name": "Tamberlake Equity Partners (sample)",
+    "type": "pe_firm",
+    "website": "https://example.com/tamberlake-equity"
+  },
+  {
+    "id": "ostravale_partners",
+    "name": "Ostravale Partners (sample)",
+    "type": "pe_firm",
+    "website": "https://example.com/ostravale-partners"
+  },
+  {
+    "id": "brightplate_group",
+    "name": "Brightplate Restaurant Group (sample)",
+    "type": "holding_company",
+    "website": null
+  },
+  {
+    "id": "corvina_hospitality",
+    "name": "Corvina Hospitality Holdings (sample)",
+    "type": "holding_company",
+    "website": null
+  },
+  {
+    "id": "maplewick_foods",
+    "name": "Maplewick Foods Inc. (sample)",
+    "type": "holding_company",
+    "website": "https://example.com/maplewick-foods"
+  }
+]

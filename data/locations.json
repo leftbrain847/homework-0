@@ -1,0 +1,412 @@
+[
+  {
+    "id": "chi_01",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — West Loop",
+    "address": "1201 Sample St, Chicago, IL (sample address)",
+    "lat": 41.8838,
+    "lng": -87.6552,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_02",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — Lincoln Park",
+    "address": "2410 Example Ave, Chicago, IL (sample address)",
+    "lat": 41.9254,
+    "lng": -87.6532,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_03",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — Pilsen",
+    "address": "1730 Placeholder Rd, Chicago, IL (sample address)",
+    "lat": 41.8566,
+    "lng": -87.6688,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "chi_04",
+    "brand_id": "tidewater_taqueria",
+    "name": "Tidewater Taqueria — Wicker Park",
+    "address": "1505 Sample St, Chicago, IL (sample address)",
+    "lat": 41.9088,
+    "lng": -87.6776,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_05",
+    "brand_id": "tidewater_taqueria",
+    "name": "Tidewater Taqueria — Logan Square",
+    "address": "2620 Demo Blvd, Chicago, IL (sample address)",
+    "lat": 41.9294,
+    "lng": -87.7076,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "chi_06",
+    "brand_id": "pastaio_fresco",
+    "name": "Pastaio Fresco — River North",
+    "address": "420 Fiction Way, Chicago, IL (sample address)",
+    "lat": 41.8925,
+    "lng": -87.6467,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_07",
+    "brand_id": "ember_and_rye",
+    "name": "Ember & Rye Smokehouse — Fulton Market",
+    "address": "901 Example Ave, Chicago, IL (sample address)",
+    "lat": 41.8869,
+    "lng": -87.6487,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_08",
+    "brand_id": "lotus_lane",
+    "name": "Lotus Lane Noodle Bar — Uptown",
+    "address": "4630 Mock St, Chicago, IL (sample address)",
+    "lat": 41.9667,
+    "lng": -87.6573,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "chi_09",
+    "brand_id": "sunmill_bakery",
+    "name": "Sunmill Bakery Café — Lakeview",
+    "address": "3120 Sample St, Chicago, IL (sample address)",
+    "lat": 41.9396,
+    "lng": -87.6583,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_10",
+    "brand_id": "copper_kettle",
+    "name": "Copper Kettle Diner — Bucktown",
+    "address": "2045 Placeholder Rd, Chicago, IL (sample address)",
+    "lat": 41.9187,
+    "lng": -87.6845,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_11",
+    "brand_id": "greenbowl",
+    "name": "Greenbowl Salads — Loop",
+    "address": "210 Demo Blvd, Chicago, IL (sample address)",
+    "lat": 41.8796,
+    "lng": -87.6355,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_12",
+    "brand_id": null,
+    "name": "Patty Wagon (sample)",
+    "address": "1844 Fiction Way, Chicago, IL (sample address)",
+    "lat": 41.9133,
+    "lng": -87.6693,
+    "cuisine": "burgers",
+    "is_franchised": false
+  },
+  {
+    "id": "chi_13",
+    "brand_id": null,
+    "name": "Casa Lumbre (sample)",
+    "address": "1912 Mock St, Chicago, IL (sample address)",
+    "lat": 41.8551,
+    "lng": -87.6612,
+    "cuisine": "mexican",
+    "is_franchised": false
+  },
+  {
+    "id": "chi_14",
+    "brand_id": null,
+    "name": "Nonna Ferro (sample)",
+    "address": "2210 Example Ave, Chicago, IL (sample address)",
+    "lat": 41.9222,
+    "lng": -87.6631,
+    "cuisine": "italian",
+    "is_franchised": false
+  },
+  {
+    "id": "chi_15",
+    "brand_id": null,
+    "name": "Brick Pit BBQ (sample)",
+    "address": "1120 Sample St, Chicago, IL (sample address)",
+    "lat": 41.8912,
+    "lng": -87.6612,
+    "cuisine": "bbq",
+    "is_franchised": false
+  },
+  {
+    "id": "chi_16",
+    "brand_id": null,
+    "name": "Slurp House (sample)",
+    "address": "4802 Demo Blvd, Chicago, IL (sample address)",
+    "lat": 41.9701,
+    "lng": -87.6612,
+    "cuisine": "noodles",
+    "is_franchised": false
+  },
+  {
+    "id": "chi_17",
+    "brand_id": null,
+    "name": "Rise & Crumb (sample)",
+    "address": "3340 Placeholder Rd, Chicago, IL (sample address)",
+    "lat": 41.9431,
+    "lng": -87.6702,
+    "cuisine": "bakery_cafe",
+    "is_franchised": false
+  },
+  {
+    "id": "chi_18",
+    "brand_id": "hollis_street",
+    "name": "Hollis Street Kitchens — Andersonville",
+    "address": "5310 Fiction Way, Chicago, IL (sample address)",
+    "lat": 41.9798,
+    "lng": -87.6684,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "chi_19",
+    "brand_id": "hollis_street",
+    "name": "Hollis Street Kitchens — Ravenswood",
+    "address": "4410 Mock St, Chicago, IL (sample address)",
+    "lat": 41.9622,
+    "lng": -87.6747,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "atx_01",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — South Congress",
+    "address": "1610 Sample St, Austin, TX (sample address)",
+    "lat": 30.2489,
+    "lng": -97.7502,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "atx_02",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — Mueller",
+    "address": "1900 Example Ave, Austin, TX (sample address)",
+    "lat": 30.2984,
+    "lng": -97.7058,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "atx_03",
+    "brand_id": "tidewater_taqueria",
+    "name": "Tidewater Taqueria — East Austin",
+    "address": "1100 Demo Blvd, Austin, TX (sample address)",
+    "lat": 30.2627,
+    "lng": -97.7262,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "atx_04",
+    "brand_id": "ember_and_rye",
+    "name": "Ember & Rye Smokehouse — Downtown",
+    "address": "505 Placeholder Rd, Austin, TX (sample address)",
+    "lat": 30.2669,
+    "lng": -97.7428,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "atx_05",
+    "brand_id": "ember_and_rye",
+    "name": "Ember & Rye Smokehouse — North Loop",
+    "address": "5300 Fiction Way, Austin, TX (sample address)",
+    "lat": 30.3172,
+    "lng": -97.7228,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "atx_06",
+    "brand_id": "sunmill_bakery",
+    "name": "Sunmill Bakery Café — Hyde Park",
+    "address": "4300 Mock St, Austin, TX (sample address)",
+    "lat": 30.3056,
+    "lng": -97.7311,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "atx_07",
+    "brand_id": null,
+    "name": "Mesquite Flats (sample)",
+    "address": "1300 Sample St, Austin, TX (sample address)",
+    "lat": 30.2601,
+    "lng": -97.7189,
+    "cuisine": "bbq",
+    "is_franchised": false
+  },
+  {
+    "id": "atx_08",
+    "brand_id": null,
+    "name": "La Fondita Azul (sample)",
+    "address": "2200 Example Ave, Austin, TX (sample address)",
+    "lat": 30.2551,
+    "lng": -97.7356,
+    "cuisine": "mexican",
+    "is_franchised": false
+  },
+  {
+    "id": "atx_09",
+    "brand_id": null,
+    "name": "Grill Lantern (sample)",
+    "address": "4700 Demo Blvd, Austin, TX (sample address)",
+    "lat": 30.3101,
+    "lng": -97.7101,
+    "cuisine": "burgers",
+    "is_franchised": false
+  },
+  {
+    "id": "atx_10",
+    "brand_id": null,
+    "name": "Morning Loaf (sample)",
+    "address": "3900 Placeholder Rd, Austin, TX (sample address)",
+    "lat": 30.2998,
+    "lng": -97.7402,
+    "cuisine": "bakery_cafe",
+    "is_franchised": false
+  },
+  {
+    "id": "den_01",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — Highlands",
+    "address": "3200 Sample St, Denver, CO (sample address)",
+    "lat": 39.7612,
+    "lng": -105.0111,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "den_02",
+    "brand_id": "pastaio_fresco",
+    "name": "Pastaio Fresco — LoDo",
+    "address": "1700 Example Ave, Denver, CO (sample address)",
+    "lat": 39.7531,
+    "lng": -104.9993,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "den_03",
+    "brand_id": "lotus_lane",
+    "name": "Lotus Lane Noodle Bar — Capitol Hill",
+    "address": "900 Demo Blvd, Denver, CO (sample address)",
+    "lat": 39.7322,
+    "lng": -104.9781,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "den_04",
+    "brand_id": "copper_kettle",
+    "name": "Copper Kettle Diner — Baker",
+    "address": "300 Placeholder Rd, Denver, CO (sample address)",
+    "lat": 39.7189,
+    "lng": -104.9876,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "den_05",
+    "brand_id": null,
+    "name": "Trattoria Selva (sample)",
+    "address": "1500 Fiction Way, Denver, CO (sample address)",
+    "lat": 39.7489,
+    "lng": -104.9921,
+    "cuisine": "italian",
+    "is_franchised": false
+  },
+  {
+    "id": "den_06",
+    "brand_id": null,
+    "name": "Peak Patty (sample)",
+    "address": "2900 Mock St, Denver, CO (sample address)",
+    "lat": 39.7587,
+    "lng": -105.0198,
+    "cuisine": "burgers",
+    "is_franchised": false
+  },
+  {
+    "id": "den_07",
+    "brand_id": null,
+    "name": "Noodle Ridge (sample)",
+    "address": "1100 Sample St, Denver, CO (sample address)",
+    "lat": 39.7366,
+    "lng": -104.9712,
+    "cuisine": "noodles",
+    "is_franchised": false
+  },
+  {
+    "id": "tor_01",
+    "brand_id": "harborline_burger",
+    "name": "Harborline Burger Co. — Queen West",
+    "address": "700 Sample St, Toronto, ON (sample address)",
+    "lat": 43.6468,
+    "lng": -79.4086,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "tor_02",
+    "brand_id": "lotus_lane",
+    "name": "Lotus Lane Noodle Bar — Annex",
+    "address": "400 Example Ave, Toronto, ON (sample address)",
+    "lat": 43.6667,
+    "lng": -79.4057,
+    "cuisine": null,
+    "is_franchised": true
+  },
+  {
+    "id": "tor_03",
+    "brand_id": "pastaio_fresco",
+    "name": "Pastaio Fresco — Yorkville",
+    "address": "120 Demo Blvd, Toronto, ON (sample address)",
+    "lat": 43.6708,
+    "lng": -79.3925,
+    "cuisine": null,
+    "is_franchised": false
+  },
+  {
+    "id": "tor_04",
+    "brand_id": null,
+    "name": "Osteria Lume (sample)",
+    "address": "650 Placeholder Rd, Toronto, ON (sample address)",
+    "lat": 43.6558,
+    "lng": -79.4012,
+    "cuisine": "italian",
+    "is_franchised": false
+  },
+  {
+    "id": "tor_05",
+    "brand_id": null,
+    "name": "Broth & Bowl (sample)",
+    "address": "300 Fiction Way, Toronto, ON (sample address)",
+    "lat": 43.6615,
+    "lng": -79.3988,
+    "cuisine": "noodles",
+    "is_franchised": false
+  }
+]

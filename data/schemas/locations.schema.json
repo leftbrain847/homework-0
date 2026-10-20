@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ownership-map.example/schemas/locations.schema.json",
+  "title": "Locations",
+  "description": "The map is location-level. Locations carry no ownership facts; they join to brands by brand_id.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "brand_id", "name", "address", "lat", "lng", "cuisine", "is_franchised"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+      "brand_id": { "type": ["string", "null"] },
+      "name": { "type": "string", "minLength": 1 },
+      "address": { "type": "string", "minLength": 1 },
+      "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+      "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+      "cuisine": {
+        "description": "Required for independents. Optional for branded locations (overrides the brand's cuisine).",
+        "oneOf": [{ "$ref": "cuisine.schema.json" }, { "type": "null" }]
+      },
+      "is_franchised": { "type": "boolean" }
+    }
+  }
+}

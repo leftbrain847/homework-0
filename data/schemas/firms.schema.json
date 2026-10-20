@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ownership-map.example/schemas/firms.schema.json",
+  "title": "Firms",
+  "description": "Entities that appear in a brand's ownership chain: private equity firms and holding companies.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "type", "website"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+      "name": { "type": "string", "minLength": 1 },
+      "type": { "enum": ["pe_firm", "holding_company"] },
+      "website": { "type": ["string", "null"], "format": "uri" }
+    }
+  }
+}

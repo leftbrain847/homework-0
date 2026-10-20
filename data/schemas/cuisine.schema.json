@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ownership-map.example/schemas/cuisine.schema.json",
+  "title": "Cuisine",
+  "description": "Controlled vocabulary so 'similar cuisine' matching is reliable. Keep in sync with src/domain/cuisine.ts.",
+  "enum": ["american", "bakery_cafe", "bbq", "burgers", "italian", "mexican", "noodles", "salads"]
+}
