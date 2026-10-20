@@ -49,7 +49,7 @@ example
 
 # test / tooling output
 coverage/
-preview/
+/preview/
 
 # OS / editor
 Thumbs.db

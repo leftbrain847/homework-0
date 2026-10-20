@@ -4,4 +4,4 @@ coverage
 .expo
 package-lock.json
 assets/expo.icon
-preview
+/preview
