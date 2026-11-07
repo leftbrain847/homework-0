@@ -11,10 +11,10 @@
     "expo-router": "~58.0.24",
     "expo-splash-screen": "~58.0.10",
     "expo-status-bar": "~58.0.3",
-    "expo-system-ui": "~58.0.6",
+    "expo-system-ui": "~58.0.7",
     "leaflet": "^1.9.4",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "react-leaflet": "^5.0.0",
     "react-native": "0.88.0",
     "react-native-maps": "1.29.11",
@@ -97,6 +97,15 @@
     },
     "@typescript-eslint/typescript-estree": {
       "minimatch": "11.0.1"
+    },
+    "@jest/reporters": {
+      "glob": "14.0.2"
+    },
+    "jest-config": {
+      "glob": "14.0.2"
+    },
+    "jest-runtime": {
+      "glob": "14.0.2"
     }
   }
 }
