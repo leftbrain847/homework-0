@@ -4,6 +4,7 @@
 version: 2
 updates:
   - package-ecosystem: npm
+    assignees: [leftbrain847]
     directory: /
     schedule:
       interval: monthly
@@ -19,6 +20,7 @@ updates:
         update-types:
           - version-update:semver-major
   - package-ecosystem: github-actions
+    assignees: [leftbrain847]
     directory: /
     schedule:
       interval: monthly
