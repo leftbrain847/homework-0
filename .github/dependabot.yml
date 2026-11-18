@@ -8,10 +8,12 @@ updates:
     schedule:
       interval: monthly
     open-pull-requests-limit: 5
+    # majors separately: they can need code changes (this split keeps patches flowing)
     groups:
-      all:
-        patterns:
-          - '*'
+      minor_and_patch:
+        update-types: [minor, patch]
+      majors:
+        update-types: [major]
     ignore:
       - dependency-name: '@types/node'
         update-types:
